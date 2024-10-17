@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    /* Mengatur font yang dipakai dan background halaman */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #8360c3, #2ebf91); /* Mengubah background ke gradien */
+    }
+    /* Membuat Container menjadi layout flexbox */
+    .container {
+      display: flex;
+    }
+    /* Mengatur desain header */
+    header {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 24px;
+      text-align: center; /* Memusatkan teks di dalam header */
+    }
+    /* Mengatur lebar menu 20% dengan background hitam */
+    aside {
+      flex: 20%;
+      background: #222;
+    }
+    /* Mengatur lebar konten utama 80% dengan background putih */
+    section.main {
+      flex: 80%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+      min-height: 530px;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      flex-grow: 1;
+      line-height: 1.6;
+      margin-top: 20px;
+      text-align: center;
+    }
+    /* Mengatur tabel */
+    .table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    .table th, .table td {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    .table th {
+      background: #eee;
+    }
+    /* Mengatur gambar untuk menjadi bingkai bulat */
+    .table img {
+      width: 100px; /* Ukuran gambar */
+      height: 100px; /* Ukuran gambar */
+      border-radius: 50%; /* Membuat bingkai bulat */
+      object-fit: cover; /* Memastikan gambar tetap proporsional dan terpotong jika diperlukan */
+      border: 2px solid #ccc; /* Menambahkan border tipis di sekitar gambar */
+    }
+    /* Mengatur footer dengan background abu-abu dan teks di tengah */
+    footer {
+      background: #ccc;
+      color: #555;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aplikasi Manajemen Pegawai</h1>
+    
+  </header>
+
+  <div class="container">
+    <aside>
+      <ul class="menu">
+        <li><a href="dashboard.html" class="aktif">Dashboard</a></li>
+        <li><a href="tabel.html" class="aktif">Data Pegawai</a></li>
+        <li><a href="tabel.html" class="aktif">Data Jabatan</a></li>
+        <li><a href="login.html" class="aktif">Keluar</a></li>
+      </ul>
+    </aside>
+
+    <section class="main">
+      <h2 class="judul">Data Pegawai</h2>
+      <a class="tombol" href="form.html">Tambah</a>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Foto</th>
+            <th>Nama</th>
+            <th>Jenis Kelamin</th>
+            <th>Tanggal Lahir</th>
+            <th>Jabatan</th>
+            <th>Keterangan</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="resource/foto.png" alt="Foto Ahmad Salim"></td>
+            <td>Ahmad Salim</td>
+            <td>L</td>
+            <td>9 Juli 1995</td>
+            <td>Direktur</td>
+            <td>-</td>
+            <td>
+              <a class="tombol edit" href="#">Edit</a>
+              <a class="tombol hapus" href="#">Hapus</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="resource/foto.png" alt="Foto Siti Maryam"></td>
+            <td>Siti Maryam</td>
+            <td>P</td>
+            <td>21 Agustus 1990</td>
+            <td>Manajer</td>
+            <td>-</td>
+            <td>
+              <a class="tombol edit" href="#">Edit</a>
+              <a class="tombol hapus" href="#">Hapus</a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="resource/foto.png" alt="Foto Muhammad Ali"></td>
+            <td>Muhammad Ali</td>
+            <td>L</td>
+            <td>5 Mei 1988</td>
+            <td>Marketing</td>
+            <td>-</td>
+            <td>
+              <a class="tombol edit" href="#">Edit</a>
+              <a class="tombol hapus" href="#">Hapus</a>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><img src="resource/foto.png" alt="Foto Putri Permata"></td>
+            <td>Putri Permata</td>
+            <td>P</td>
+            <td>15 Januari 1993</td>
+            <td>Kasir</td>
+            <td>-</td>
+            <td>
+              <a class="tombol edit" href="#">Edit</a>
+              <a class="tombol hapus" href="#">Hapus</a>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><img src="resource/foto.png" alt="Foto Rudi Susanto"></td>
+            <td>Rudi Susanto</td>
+            <td>L</td>
+            <td>3 Maret 1997</td>
+            <td>Chef</td>
+            <td>-</td>
+            <td>
+              <a class="tombol edit" href="#">Edit</a>
+              <a class="tombol hapus" href="#">Hapus</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <footer>
+    <p>Copyright &copy; 2024</p>
+  </footer>
+</body>
+</html>

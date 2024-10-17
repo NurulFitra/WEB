@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   }
+   header {
+    background-color: #280872;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+   }
+   header nav ul {
+    list-style-type: none;
+    padding: 0;
+   }
+   header nav ul li {
+    display: inline;
+    margin: 0px 10px;
+    border-right: 1px dotted #f9f9f9;
+    padding-right: 20px;
+   }
+   header nav ul li a:hover {
+    font-weight: bold;
+   }
+   header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+   }
+   section {
+    padding: 50px 0;
+    text-align: center;
+   }
+   .container {
+   max-width: 1200px;  /* Batas lebar maksimal container */
+   margin: auto;  /* Pusatkan container di halaman */
+   display: grid; /* Menggunakan grid layout */
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Membuat 3 kolom, tapi fleksibel di layar sempit */
+   gap: 20px;
+   }
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   }
+   header {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+   }
+   header nav ul {
+    list-style-type: none;
+    padding: 0;
+   }
+   header nav ul li {
+    display: inline;
+    margin: 0px 10px;
+    border-right: 1px dotted #f9f9f9;
+    padding-right: 20px;
+   }
+   header nav ul li a:hover {
+    font-weight: bold;
+   }
+   header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+   }
+   section {
+    padding: 50px 0;
+    text-align: center;
+   }
+   .container {
+    max-width: 1200px;  /* Batas lebar maksimal container */
+    margin: auto;  /* Pusatkan container di halaman */
+    display: grid; /* Menggunakan grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Membuat 3 kolom, tapi fleksibel di layar sempit */
+    gap: 20px;  /* Jarak antar elemen */
+   }
+   footer {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%; 
+   }
+   .menu-item {
+    text-align: center;
+    border: 1px solid #ddd;  /* Memberi border tipis di setiap item */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Memberikan sedikit bayangan */
+   }
+   .menu-item img {
+    max-width: 100%;  /* Agar gambar tidak melampaui ukuran elemen */
+    height: auto;
+    border-radius: 5px;  /* Membulatkan sedikit ujung gambar */
+   } 
+   h3 {
+    font-size: 1.25em;
+    margin-top: 10px;
+   }
+   p {
+    font-size: 1em;
+    color: #666;
+   }
